@@ -1,0 +1,16 @@
+
+.light-mode {
+    background-color: #fff;
+    color: #222;
+}
+.dark-mode {
+    background-color: #111;
+    color: #fff;
+}
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

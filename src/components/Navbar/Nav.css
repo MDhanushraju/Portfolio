@@ -1,0 +1,62 @@
+   
+   
+.Nav {
+  transition: opacity 1s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+  position: fixed;
+  top: 3px;
+  left: 50px;
+  right: 0;
+  width: 90%;
+  background-image: linear-gradient(45deg, rgb(17, 4, 153), rgb(189, 241, 191));
+  border-radius: 0 0 8px 8px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+  padding: 0 32px;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.Nav.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  
+}
+
+.Nav.visible {
+  opacity: 1;
+  transform: translateY(0);
+
+}
+.Nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-center {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nav-center a:hover {
+  color: rgb(240, 183, 129);
+  background-color: rgb(231, 240, 240);
+}

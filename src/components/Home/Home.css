@@ -1,0 +1,46 @@
+
+.split{
+   min-height: 100vh;
+    width: 100vw; 
+    display: flex;
+    right: 0%;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.one
+{
+  width: 60%;
+  height: 130%;
+}
+.two{
+  width: 45%;
+  height: 130%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle{
+  border-radius: 50%;
+  border: 4px solid #3b3c49;
+  background-size: cover;
+  background-position: center;
+
+  width: 70%;
+  height: 350px;
+}
+
+.word {
+  opacity: 0;
+  display: inline-block;
+  transition: opacity 0.5s ease;
+}
+
+.word.visible {
+  opacity: 1;
+}
+
