@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from './Components/Navbar/Navbar';
-import Home from './Components/Home/Home';
-import Footer from './Components/Footer';
-import "./App.css"
-import About from './Components/About/About';
-import Resume from './Components/Resume/Resume';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import Footer from './components/Footer';
+import "./App.css";
+import About from './components/About/About';
+
+import Skill from './components/Skills/Skill';
+import Resume from './components/Resume/Resume';
+import Contact from './components/Contact/Contact';
 
 
 
@@ -41,12 +44,13 @@ console.log(resume)
       <Navbar visible={visible} light={light} setLight={setLight} setResume={setResume} />
       <Home id='home' />
   <About id="about"/>
+  <Skill/>
     
      {
-      resume && <Resume id="resume" setResume={setResume}/>
+      resume && <Resume  id="resume" setResume={setResume}/>
      }
     
-<Footer/>
+<Contact/>
     </div>
   );
 }

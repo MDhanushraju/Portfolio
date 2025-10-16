@@ -19,7 +19,7 @@ export default function Navbar({ visible,light,setLight,setResume }) {
       <div className="nav-center">
   <a href="#home">Home</a>
   <a href="#about">About</a>
-   <a href="#Skill">Skills</a>
+   {/* <a href="#Skill">Skills</a> */}
   <a href="#work">Projects</a>
   <a href="#Contact">Contact</a>
       </div>

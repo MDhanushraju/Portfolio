@@ -1,37 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './About.css';
 import profilePhoto from '../assets/IMG-20240927-WA0025.jpg';
 
 export default function About() {
+  const [activeTab, setActiveTab] = useState('skills');
+
   return (
-    <div className="about-container" id="about">
-      <div className="photo-section">
-        <img src={profilePhoto} alt="Profile" className="profile-photo" />
+    <>
+      <div className="about-container" id="about">
+        <div className="photo-section">
+          <img src={profilePhoto} alt="Profile" className="profile-photo" />
+        </div>
+        <div className="content-section about">
+          <h1>About Me</h1>
+          <p>
+            I'm a front-end developer eager to build intuitive and visually appealing web experiences using React.js, JavaScript, HTML, and CSS.
+            I enjoy tackling coding challenges, experimenting with new technologies, and regularly push myself to publish projects and learn from real-world feedback...
+          </p>
+          <div className="tab-title">
+            <p className={`tab-links${activeTab === "skills" ? " active-link" : ""}`} onClick={() => setActiveTab("skills")}>Skills</p>
+            <p className={`tab-links${activeTab === "education" ? " active-link" : ""}`} onClick={() => setActiveTab("education")}>Education</p>
+            {/* <p className={`tab-links${activeTab === "projects" ? " active-link" : ""}`} onClick={() => setActiveTab("projects")}>Projects</p> */}
+          </div>
+          {activeTab === "skills" && 
+            <div className="tab-contents skills">
+              <ul>
+                <li><span>Languages & Frameworks: </span><br />HTML5, CSS3, JavaScript (ES6), React.js, Bootstrap</li>
+          <li><span>Libraries & Tools:</span><br />Git, GitHub, Redux (familiar), Tailwind CSS (familiar),Webpack/Vite (familiar).</li>
+             <li><span>Core Competencies:</span><br /> Responsive Design, Accessibility, API Integration (REST), DOM Manipulation,
+Debugging, Cross-Browser Optimization</li>
+<li><span>Workflows: </span><br /> Agile, Scrum, Version Control, Collaboration</li>
+              </ul>
+
+            </div>}
+          {activeTab === "education" && 
+            <div className="tab-contents education">
+              <ul>
+                <li><span>Bachelor of Engineering (Electronics and Communication Engineering) :-</span><br />Saveetha Engineering College
+                <br />
+                  CGPA: 7.5/10
+                </li>
+                <li><span>Higher Secondary Education :-</span><br />Sri Chaitanya Junior College<br />
+                  Percentage: 71.4%</li>
+                <li><span>Secondary School Education :-</span><br />Bashyam High School<br />
+                  CGPA: 8.7/10</li>
+
+               
+              </ul>
+            </div>}
+          {/* {activeTab === "projects" && 
+            <div className="tab-contents projects">
+              <ul>
+                <li><span>Portfolio Website</span><br />React, CSS, responsive design</li>
+               
+              </ul>
+            </div>} */}
+        </div>
       </div>
-      <div className="content-section">
-        <h1>About Me</h1>
-        <p>
-          I am a Front-End Developer based in Bengaluru, India, with a Bachelor’s degree in Electronics and Communication Engineering from Saveetha Engineering College. I specialize in building responsive, high-quality web applications using React.js, JavaScript ES6, HTML5, CSS3, and Bootstrap.
-        </p>
-        <h3>Technical Skills</h3>
-        <ul>
-          <li>Frontend: React.js, JavaScript ES6, TypeScript (learning), HTML5, CSS3, Bootstrap</li>
-          <li>Version Control & Tools: Git, GitHub, Redux, familiar with Tailwind CSS, Webpack, Vite</li>
-          <li>Core Competencies: Responsive Design, Accessibility, RESTful API Integration, DOM Manipulation, Debugging, Cross-Browser Optimization</li>
-          <li>Workflows: Agile, Scrum, Version Control, Collaboration</li>
-        </ul>
-        <h3>Selected Projects</h3>
-        <ul>
-          <li>Developed 10+ small-scale front-end applications including login forms, e-commerce pages, and responsive UIs with modular, maintainable code.</li>
-          <li>Built a Food Recipe Website SPA using React.js integrated with RESTful APIs for dynamic recipe data.</li>
-          <li>Applied Bootstrap grid system and custom CSS for mobile-first design, along with client-side routing for seamless navigation.</li>
-          <li>Used GitHub for version control, branching, and issue tracking during project development.</li>
-        </ul>
-        <h3>Interests & Goals</h3>
-        <p>
-          I am passionate about improving my skills in front-end development and am eager to grow into a full-stack developer. I enjoy working on challenging projects, participating in coding challenges and hackathons, and collaborating with others in Agile and Scrum environments.
-        </p>
-      </div>
-    </div>
+    </>
   );
 }

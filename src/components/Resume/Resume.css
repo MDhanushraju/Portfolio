@@ -2,6 +2,7 @@
     position: fixed;
     top: 20px;
     left: 15%;
+    
 }
 
 
@@ -15,7 +16,7 @@
     box-shadow: 0 4px 24px rgba(0,0,0,0.12);
     /* margin: 32px auto; */
     box-sizing: border-box;
- 
+ top: 42px;
 }
 /* .resume-close {
     position: absolute;
@@ -45,8 +46,9 @@
     
      width: 40px;
     height: 32px;
-    padding: 6px ;
+   
     text-align: center;
+   top: 0px;
     
     
    cursor: pointer;

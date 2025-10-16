@@ -18,10 +18,26 @@ export default function Home(props) {
   }, [visibleWordCount, words.length]);
 
   return (
+  <>
    <section className="he" id="home" tabIndex={-1} aria-label="Home Section">
   <div className="container split">
+
+
     <div className="container one">
-     
+    <div
+        className="container circle profile-photo"
+        style={{
+          backgroundImage: `url(${profileImg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          border: '4px solid #3b3c49',
+          borderRadius: '50%',
+          width: '220px',
+          height: '220px',
+          boxShadow: '0 4px 24px rgba(0,0,0,0.20)',
+        }}
+        aria-label="Profile photo of Dhanush M"
+      ></div>
       <h2 className="text animated-letters" aria-label={text.trim()}>
         {words.map((word, index) => (
           <span
@@ -45,24 +61,10 @@ export default function Home(props) {
         </a>
       </div>
     </div>
-    {/* <div className="two">
-      <div
-        className="container circle profile-photo"
-        style={{
-          backgroundImage: `url(${profileImg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          border: '4px solid #3b3c49',
-          borderRadius: '50%',
-          width: '220px',
-          height: '220px',
-          boxShadow: '0 4px 24px rgba(0,0,0,0.20)',
-        }}
-        aria-label="Profile photo of Dhanush M"
-      ></div>
-    </div> */}
+    
   </div>
 </section>
+</>
 
   );
 }

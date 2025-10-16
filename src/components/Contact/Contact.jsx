@@ -1,0 +1,14 @@
+import React from 'react'
+import './Contact.css'
+
+export default function Contact() {
+  return (
+    <>
+    <div className="container">
+        <div className="container"></div>
+        <div className="container"></div>
+        
+    </div>
+    </>
+  )
+}

@@ -5,11 +5,7 @@ const resumeup = "/M_Dhanush_Resume (2).pdf";
 export default function Resume({setResume}) {
   return (
     <div className='open'>
-      <div className='con'>
-        <button
-         className='btn cross btn-danger btn-sm '
-         onClick={(e)=>setResume(false)}
-    >X</button></div>
+     
       <div className="container resume text-center">
  
       <iframe
@@ -19,7 +15,11 @@ export default function Resume({setResume}) {
         className="inside"
         style={{ borderRadius: '12px' }}
       />
-
+ <div className='con'>
+        <button
+         className='btn cross btn-danger btn-sm '
+         onClick={(e)=>setResume(false)}
+    >X</button></div>
       
     
     </div>
