@@ -1,7 +1,33 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Contact.css'
+import emailjs from '@emailjs/browser';
+
+
+
 const resumeUrl = "/M_Dhanush_Resume (2).pdf";
 export default function Contact() {
+    const form = useRef();
+
+
+     const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_xcppxsj', 'template_h51xlan', form.current, {
+        publicKey: '1QoOtpNXtFjL60gP7',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          alert('Message sent successfully!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          alert('Failed to send the message, please try again.');
+        },
+      );
+  };
+
   return (
     <>
       <div className="container sp" id='contact'>
@@ -38,11 +64,12 @@ export default function Contact() {
            <button className='btn btn-danger res' ><a href={resumeUrl} download="Dhanush">Download resume</a></button>
         </div>
         <div className="container email mt-2">
-          <form action="" className=''>
-            <input type="text" className='form-control' name='Name' placeholder='Enter the your name'/>
-            <input type="email" name="email" id="" className='form-control mt-4' placeholder='Enter the your email'/>
-            <textarea name="Message" id="" className='form-control mt-4 ' placeholder='Enter the text' rows={4} ></textarea>
-           <button type="submit" className='btn btn-danger mt-3'>Submit </button>
+          <form action="" className='' ref={form} onSubmit={sendEmail}>
+            <input type="text" className='form-control' name="your_name" placeholder='Enter the your name'/>
+            <input type="email" name="your_email" id="" className='form-control mt-4' placeholder='Enter the your email'/>
+            <textarea name="message" id="" className='form-control mt-4 ' placeholder='Enter the text' rows={4} ></textarea>
+           <button type="submit" className='btn btn-danger mt-3' >Submit </button>
+          
           </form>
         </div>
       </div>
