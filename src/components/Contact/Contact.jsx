@@ -4,7 +4,7 @@ const resumeUrl = "/M_Dhanush_Resume (2).pdf";
 export default function Contact() {
   return (
     <>
-      <div className="container sp">
+      <div className="container sp" id='contact'>
         <div className="container contact">
           <h1>Contact Me:-</h1>
           <span className='contact-row icon-1'>
@@ -37,7 +37,14 @@ export default function Contact() {
           </div>
            <button className='btn btn-danger res' ><a href={resumeUrl} download="Dhanush">Download resume</a></button>
         </div>
-        <div className="container email"></div>
+        <div className="container email mt-2">
+          <form action="" className=''>
+            <input type="text" className='form-control' name='Name' placeholder='Enter the your name'/>
+            <input type="email" name="email" id="" className='form-control mt-4' placeholder='Enter the your email'/>
+            <textarea name="Message" id="" className='form-control mt-4 ' placeholder='Enter the text' rows={4} ></textarea>
+           <button type="submit" className='btn btn-danger mt-3'>Submit </button>
+          </form>
+        </div>
       </div>
     </>
   )

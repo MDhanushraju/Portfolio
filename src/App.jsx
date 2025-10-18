@@ -50,7 +50,7 @@ console.log(resume)
       resume && <Resume  id="resume" setResume={setResume}/>
      }
     
-<Contact/>
+<Contact id="contact"/>
     </div>
   );
 }

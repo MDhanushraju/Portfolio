@@ -2,7 +2,7 @@
     position: fixed;
     top: 20px;
     left: 15%;
-    
+    z-index: 1000;
 }
 
 
@@ -17,6 +17,7 @@
     /* margin: 32px auto; */
     box-sizing: border-box;
  top: 42px;
+ z-index: 1000;
 }
 /* .resume-close {
     position: absolute;
