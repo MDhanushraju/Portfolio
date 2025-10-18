@@ -10,7 +10,7 @@ export default function Contact() {
 
 
      const sendEmail = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
     emailjs
       .sendForm('service_xcppxsj', 'template_h51xlan', form.current, {
@@ -20,6 +20,7 @@ export default function Contact() {
         () => {
           console.log('SUCCESS!');
           alert('Message sent successfully!');
+          form.current.reset();
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -65,7 +66,7 @@ export default function Contact() {
         </div>
         <div className="container email mt-2">
           <form action="" className='' ref={form} onSubmit={sendEmail}>
-            <input type="text" className='form-control' name="your_name" placeholder='Enter the your name'/>
+            <input type="text" className='form-control' name="your_name" placeholder='Enter the your name' />
             <input type="email" name="your_email" id="" className='form-control mt-4' placeholder='Enter the your email'/>
             <textarea name="message" id="" className='form-control mt-4 ' placeholder='Enter the text' rows={4} ></textarea>
            <button type="submit" className='btn btn-danger mt-3' >Submit </button>
