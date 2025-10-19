@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Skill from './components/Skills/Skill';
 import Resume from './components/Resume/Resume';
 import Contact from './components/Contact/Contact';
+import Project from './components/Project/Project';
 
 
 
@@ -44,13 +45,17 @@ console.log(resume)
       <Navbar visible={visible} light={light} setLight={setLight} setResume={setResume} />
       <Home id='home' />
   <About id="about"/>
-  <Skill/>
+  
+
     
      {
       resume && <Resume  id="resume" setResume={setResume}/>
+
      }
+     <Project id="project"/>
     
 <Contact id="contact"/>
+
     </div>
   );
 }

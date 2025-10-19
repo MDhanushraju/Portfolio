@@ -20,7 +20,7 @@ export default function Navbar({ visible,light,setLight,setResume }) {
   <a href="#home">Home</a>
   <a href="#about">About</a>
    {/* <a href="#Skill">Skills</a> */}
-  <a href="#work">Projects</a>
+  <a href="#project">Projects</a>
   <a href="#contact">Contact</a>
       </div>
       <div className="nav-actions">
