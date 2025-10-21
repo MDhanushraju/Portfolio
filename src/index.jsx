@@ -1,6 +1,8 @@
 
 import ReactDom from "react-dom/client"
 import "bootstrap/dist/css/bootstrap.min.css";
+import "https://mdhanushraju.github.io/Portfolio/assets"
+
 
 import "./App.css"
 

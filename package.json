@@ -1,5 +1,6 @@
 {
   "homepage": "https://mdhanushraju.github.io/Portfolio",
+
   "name": "package.json",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
