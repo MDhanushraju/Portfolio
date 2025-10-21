@@ -93,3 +93,22 @@
 .tab-contents.skills{
 display: block;
 } */
+
+@media  screen  and (max-width: 780px) {
+  .about-container {
+    flex-direction: column;
+    padding: 16px 12px;
+    gap: 16px;
+  }
+
+  .profile-photo {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  .content-section {
+    font-size: 1rem;
+  }
+  
+}

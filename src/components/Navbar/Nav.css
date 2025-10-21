@@ -60,3 +60,59 @@
   color: rgb(240, 183, 129);
   background-color: rgb(231, 240, 240);
 }
+.Nav .bi{
+display: none;
+
+  }  
+@media  screen  and (max-width: 780px) {
+  .Nav .bi{
+display: block;
+font-size: 25px;
+
+
+  }  
+  .Nav .phone{
+   background-color: brown;
+   position: fixed;
+   top: 65px;
+   right: 0;
+   width: 150px;
+    height: 40vh;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+     transition: right 0.3s ease-in-out;
+
+    
+  }
+  
+  .Nav .cross{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    cursor: pointer;
+    transition: left 0.3s ease-in-out;
+  }
+   .Nav .phone.open {
+    right: 0px;  
+    position: absolute;
+    left: 495px;
+    
+
+  }
+  .Nav .phone.close {
+    right: -200px;  
+  }
+  /* .phone.list{
+    position: absolute;
+    left: 550px;
+  } */
+  
+ 
+  
+
+  
+  
+}
