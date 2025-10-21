@@ -24,7 +24,7 @@ export default function Home(props) {
 
 
     <div className="container one">
-    <div
+    {/* <div
         className="container circle profile-photo"
         style={{
           backgroundImage: `url(${profileImg})`,
@@ -37,7 +37,7 @@ export default function Home(props) {
           boxShadow: '0 4px 24px rgba(0,0,0,0.20)',
         }}
         aria-label="Profile photo of Dhanush M"
-      ></div>
+      ></div> */}
       <h2 className="text animated-letters" aria-label={text.trim()}>
         {words.map((word, index) => (
           <span
