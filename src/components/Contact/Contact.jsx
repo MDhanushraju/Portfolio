@@ -4,7 +4,8 @@ import emailjs from '@emailjs/browser';
 
 
 
-const resumeUrl = "/M_Dhanush_Resume (2).pdf";
+const resumeUrl = "/Portfolio/M_Dhanush_Resume (2).pdf";
+
 export default function Contact() {
     const form = useRef();
 

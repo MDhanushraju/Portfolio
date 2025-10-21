@@ -1,7 +1,9 @@
 import React from 'react';
 import "./Resume.css";
 
-const resumeup = "/M_Dhanush_Resume (2).pdf";
+// import resume from "..assets/M_Dhanush_Resume (2).pdf"
+const resumeup = "/Portfolio/M_Dhanush_Resume (2).pdf";
+
 export default function Resume({setResume}) {
   return (
     <div className='open'>
