@@ -9,7 +9,8 @@
   left: 50px;
   right: 0;
   width: 90%;
-  background-image: linear-gradient(45deg, rgb(17, 4, 153), rgb(189, 241, 191));
+  background: linear-gradient(120deg, #7686c8 0%, #a7d0cf 100%);
+
   border-radius: 0 0 8px 8px;
   z-index: 100;
   display: flex;
@@ -96,9 +97,10 @@ font-size: 25px;
     transition: left 0.3s ease-in-out;
   }
    .Nav .phone.open {
-    right: 0px;  
-    position: absolute;
-    left: 495px;
+    right: 10px;  
+    position: fixed;
+    left: 60%;
+    
     
 
   }

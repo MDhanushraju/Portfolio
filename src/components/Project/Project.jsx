@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./Project.css"
 import recipeImg from '../assets/recipe.png'
 import Portfolio from '../assets/portfolio.png'
@@ -45,11 +45,11 @@ export default function Project() {
                 <h3>Empty</h3>
               </div>
               <div className="card-body body-1">
-                <img src="" alt="" className='img' />
+                {/* <img src="" alt="" className='img' /> */}
               </div>
               <div className="card-footer foot-1 ">
                 <button className='btn btn-success'>
-                  <a href="" target='_blank' className='a-1' style={{textDecoration:"none",color:"white"}}>view</a>
+                  {/* <a href="" target='_blank' className='a-1' style={{textDecoration:"none",color:"white"}}>view</a> */}
                 </button>
               </div>
             </div>

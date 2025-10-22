@@ -29,10 +29,10 @@ let [open, setOpen] = useState(false);
         
          </div>
       <div className="nav-actions">
-        <button onClick={handleLightToggle}>
+        <button className='btn ' onClick={handleLightToggle}>
           {light ? "☀️" : "🌑"}
         </button>
-        <button className={`re `} onClick={(e) => setResume(true)}>
+        <button className={`re btn `} onClick={(e) => setResume(true)}>
          Resume
         </button> 
         
