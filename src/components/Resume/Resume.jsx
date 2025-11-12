@@ -2,10 +2,11 @@ import React from 'react';
 import "./Resume.css";
 
 // import resume from "..assets/M_Dhanush_Resume (2).pdf"
-const resumeup = "/Portfolio/M_Dhanush_Resume (2).pdf";
+const resumeup = "public/M_Dhanush_Front_End.pdf";
 
 export default function Resume({setResume}) {
   return (
+   <>
     <div className='open'>
      
       <div className="container resume text-center">
@@ -26,6 +27,6 @@ export default function Resume({setResume}) {
     
     </div>
     
-    </div>
+    </div></>
   );
 }
